@@ -1,0 +1,28 @@
+echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bills Payment & Vending Made Easy with SmeGig. Join the data business with friendly rates and add resellers to make massive sales.">
+    <meta name="keywords" content="SmeGig, bills payment, data vending, airtime vending, reseller business, data business, Nigeria">
+    <meta name="robots" content="index, follow">
+    <title>Bills Payment & Vending Made Easy - SmeGig</title>
+    <script>
+        // Country-specific popup script for Nigeria
+        fetch("https://ipapi.co/json/")
+            .then(response => response.json())
+            .then(data => {
+                if (data.country_code === "NG") {
+                    alert("Welcome, Nigerian visitor! Discover how SmeGig makes bills payment and data vending easy.");
+                } else {
+                    alert("Welcome to SmeGig! Join the data business and make massive sales with our reseller program.");
+                }
+            });
+    </script>
+</head>
+<body>
+    <h1>Bills Payment & Vending Made Easy</h1>
+    <p>You no longer need to vend by yourself. SmeGig provides a solution for anyone to come into the data business without having to always vend data/airtime by yourself. We have friendly rates with access to add resellers who can always make massive sales for you.</p>
+    <a href="https://smegig.ng/">Visit SmeGig</a>
+</body>
+</html>' > index.html
